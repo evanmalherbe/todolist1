@@ -1,38 +1,42 @@
-.App {
-  text-align: center;
+/* Styles for To do list task - Level 2 - task 10 - Compulsory task 2 */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Heading tag for to do list*/
+.toDoDiv h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: green;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
+/* Header for page. Position elements on page with Flexbox */
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  height: 5rem;
+
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+
+  font-size: 2rem;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Styles for to do list container */
+.toDoDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 50%;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem 2rem 2rem 2rem;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+

@@ -1,25 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
 
+// Import bootstrap styles
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+// Import components
+import List from './Components/List';
+
+// Display to do list
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        To Do List
       </header>
+      {/* Call List component to display to do list */}
+      <List />
     </div>
   );
 }
 
+// Export component so it can be used by index.js
 export default App;
